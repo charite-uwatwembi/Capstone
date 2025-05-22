@@ -1,2 +1,2 @@
 # Capstone
-This is going to be my capston repo
+This is a repo for my capstone
