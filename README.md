@@ -1,2 +1,2 @@
 # Capstone
-This is a repository for my capstone project topic
+This is a repository for my capstone project 
