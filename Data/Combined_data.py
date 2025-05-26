@@ -10,8 +10,6 @@ df_zenodo_filtered = zenodo_df[['N', 'P', 'K', 'ph']]
 # Select only relevant columns from cip
 df_cip_filtered = cip_df[['Latitude', 'Longitude', 'treat', 'tuberY']]
 
-# Concatenate horizontally, ensuring rows align appropriately
-# Note: Rows must correspond correctly; ensure datasets match spatially or temporally
 combined_df = pd.concat([df_cip_filtered, df_zenodo_filtered], axis=1)
 
 # Drop rows with any missing values
