@@ -1,2 +1,2 @@
 # Capstone final year project
-This is about to be a repository for my capstone final projects. 
+This is about to be a repository for my capstone final year projects. 
