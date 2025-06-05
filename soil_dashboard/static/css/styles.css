@@ -1,0 +1,23 @@
+/* static/css/styles.css */
+
+/* Body padding so content isn’t flush against top */
+body {
+  padding-top: 1rem;
+  background-color: #f8f9fa;
+}
+
+/* Card styling override */
+.card {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Increase font size for chart labels */
+.chartjs-render-monitor {
+  font-size: 0.9rem !important;
+}
+
+/* Table styling */
+#table-batch th,
+#table-batch td {
+  vertical-align: middle;
+}
