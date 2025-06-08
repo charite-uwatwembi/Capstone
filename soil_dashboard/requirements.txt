@@ -1,7 +1,0 @@
-# Requirements for the Soil Dashboard project
-Flask==2.2.5
-joblib==1.3.2
-numpy==2.2.6
-pandas==2.0.3
-scikit-learn==1.6.1
-imbalanced-learn==0.10.1
