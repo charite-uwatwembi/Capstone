@@ -29,7 +29,7 @@ https://github.com/charite-uwatwembi/Capstone
 2. **Backend (Flask)**
 
    ```bash
-      cd backend
+      cd project_BackEnd
       python3 -m venv venv
       .\venv\Scripts\Activate   
       pip install -r requirements.txt
