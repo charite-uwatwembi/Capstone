@@ -1,4 +1,4 @@
-````markdown
+
 # SoilSync Dashboard
 
 ## Description
@@ -23,7 +23,7 @@ https://github.com/charite-uwatwembi/Capstone
    ```bash
    git clone https://github.com/charite-uwatwembi/Capstone
    cd capstone
-````
+```
 
 2. **Backend (Flask)**
 
@@ -75,4 +75,4 @@ https://github.com/charite-uwatwembi/Capstone
 Enjoy exploring SoilSync, your intelligent soil fertility advisor!
 
 ```
-```
+````
