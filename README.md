@@ -51,8 +51,12 @@ https://github.com/charite-uwatwembi/Capstone
 
 
 * **Screenshots**:
-  ![Main Dashboard](/docs/screenshots/image.png)
-  ![Soil Form & Recommendation](docs/screenshots/form-recommendation.png)
+  ![Main Dashboard](/docs/screenshots/image1.png)
+  ![Main Dashboard](/docs/screenshots/home.png)
+  ![Main Dashboard](/docs/screenshots/image2.png)
+  ![Main Dashboard](/docs/screenshots/image3.png)
+  ![Main Dashboard](/docs/screenshots/image4.png)
+  
 
 ## Deployment Plan
 
