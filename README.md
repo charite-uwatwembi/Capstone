@@ -75,9 +75,5 @@ https://github.com/charite-uwatwembi/Capstone
 ▶️ Watch the end-to-end workflow and UI walkthrough here:
 [Demo-video](https://www.youtube.com/watch?v=8iXgbMQsK1w)
 
----
 
-Enjoy exploring SoilSync, your intelligent soil fertility advisor!
-
-```
 ````
