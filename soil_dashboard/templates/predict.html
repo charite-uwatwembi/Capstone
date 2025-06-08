@@ -1,0 +1,179 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <!-- Hero Section -->
+            <div class="text-center p-4 bg-light rounded mb-5 shadow-sm">
+                <h3 class="fw-bold">Predict Your Soil Fertilizer</h3>
+                <p>Enter soil readings &amp; crop, then get a fertilizer recommendation and application rate.</p>
+            </div>
+
+            <!-- Input Form -->
+            <form id="predictForm" class="mb-4">
+                <div class="row g-3">
+                    <!-- Numeric Inputs -->
+                    <div class="col-sm-6">
+                        <label for="phosphorus" class="form-label">Phosphorus (ppm)</label>
+                        <input
+                            type="number"
+                            step="0.01"
+                            id="phosphorus"
+                            name="phosphorus"
+                            class="form-control"
+                            placeholder="e.g. 3.47"
+                            required
+                        />
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="k" class="form-label">K (cmol/kg)</label>
+                        <input
+                            type="number"
+                            step="0.001"
+                            id="k"
+                            name="k"
+                            class="form-control"
+                            placeholder="e.g. 0.356"
+                            required
+                        />
+                    </div>
+
+                    <div class="col-sm-6">
+                        <label for="tn" class="form-label">TN (%)</label>
+                        <input
+                            type="number"
+                            step="0.01"
+                            id="tn"
+                            name="tn"
+                            class="form-control"
+                            placeholder="e.g. 1.72"
+                            required
+                        />
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="oc" class="form-label">OC (%)</label>
+                        <input
+                            type="number"
+                            step="0.01"
+                            id="oc"
+                            name="oc"
+                            class="form-control"
+                            placeholder="e.g. 2.7"
+                            required
+                        />
+                    </div>
+
+                    <div class="col-sm-6">
+                        <label for="cec" class="form-label">CEC (cmol/kg)</label>
+                        <input
+                            type="number"
+                            step="0.01"
+                            id="cec"
+                            name="cec"
+                            class="form-control"
+                            placeholder="e.g. 13"
+                            required
+                        />
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="sand" class="form-label">Sand (%)</label>
+                        <input
+                            type="number"
+                            step="0.1"
+                            id="sand"
+                            name="sand"
+                            class="form-control"
+                            placeholder="e.g. 41"
+                            required
+                        />
+                    </div>
+
+                    <div class="col-sm-6">
+                        <label for="silt" class="form-label">Silt (%)</label>
+                        <input
+                            type="number"
+                            step="0.1"
+                            id="silt"
+                            name="silt"
+                            class="form-control"
+                            placeholder="e.g. 18"
+                            required
+                        />
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="clay" class="form-label">Clay (%)</label>
+                        <input
+                            type="number"
+                            step="0.1"
+                            id="clay"
+                            name="clay"
+                            class="form-control"
+                            placeholder="e.g. 41"
+                            required
+                        />
+                    </div>
+
+                    <div class="col-sm-6">
+                        <label for="map" class="form-label">MAP (mm)</label>
+                        <input
+                            type="number"
+                            step="0.1"
+                            id="map"
+                            name="map"
+                            class="form-control"
+                            placeholder="e.g. 1241.63"
+                            required
+                        />
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="elevation" class="form-label">Elevation (m)</label>
+                        <input
+                            type="number"
+                            step="1"
+                            id="elevation"
+                            name="elevation"
+                            class="form-control"
+                            placeholder="e.g. 1673"
+                            required
+                        />
+                    </div>
+
+                    <div class="col-sm-6">
+                        <label for="crop" class="form-label">Crop</label>
+                        <select id="crop" name="crop" class="form-select" required>
+                            <option value="">Choose Crop…</option>
+                            <option value="Bean">Bean</option>
+                            <option value="Maize">Maize</option>
+                            <option value="Potato">Potato</option>
+                            <option value="Rice">Rice</option>
+                            <option value="Wheat">Wheat</option>
+                            <option value="Sorghum">Sorghum</option>
+                            <option value="Soybean">Soybean</option>
+                            <option value="Pea">Pea</option>
+                            <option value="Irish_Potato">Potato, Irish</option>
+                            <option value="Sweet_Potato">Potato, Sweet</option>
+                            <option value="Rice_lowland">Rice, Lowland</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="mt-4 text-center">
+                    <button type="submit" class="btn btn-success btn-lg" id="predictBtn">
+                        🌱 Predict Fertilizer
+                    </button>
+                </div>
+            </form>
+
+            <!-- Result Section -->
+            <div id="resultSection" class="mt-5 d-none">
+                <h5 class="fw-bold">Recommended Fertilizer</h5>
+                <p id="fertLabel" class="fs-5"></p>
+                <p id="fertRate" class="fs-5"></p>
+
+                <!-- Chart Container -->
+                <canvas id="fertChart" height="150"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
