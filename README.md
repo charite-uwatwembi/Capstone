@@ -68,7 +68,7 @@ https://github.com/charite-uwatwembi/Capstone
 ## Video Demo
 
 ▶️ Watch the end-to-end workflow and UI walkthrough here:
-[https://youtu.be/your-demo-video](https://youtu.be/your-demo-video)
+[Demo-video](https://www.youtube.com/watch?v=8iXgbMQsK1w)
 
 ---
 
