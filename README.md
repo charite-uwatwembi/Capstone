@@ -3,7 +3,7 @@
 
 ## Description
 
-SoilSync is an end-to-end smart‐agriculture dashboard that ingests soil sensor data—either manually entered or streamed via a virtual IoT simulator—and uses a trained Random Forest model to recommend the optimal fertilizer blend and application rate. The web interface presents:
+SoilSync is an end-to-end smart‐agriculture dashboard that ingests soil sensor data, either manually entered or streamed via a virtual IoT simulator, and uses a trained Random Forest model to recommend the optimal fertilizer blend and application rate. The web interface presents:
 
 - **Real-time Recommendations**: Instantly view fertilizer type, rate (kg/ha), and confidence score.  
 - **Soil Data Visualizations**: Bar charts of N, P, K levels and time-series trends of past recommendations.  
@@ -23,16 +23,17 @@ https://github.com/charite-uwatwembi/Capstone
    ```bash
    git clone https://github.com/charite-uwatwembi/Capstone
    cd capstone
-```
+``
+
 
 2. **Backend (Flask)**
 
    ```bash
-   cd backend
-   python3 -m venv venv
-   .\venv\Scripts\Activate   
-   pip install -r requirements.txt
-   flask run
+      cd backend
+      python3 -m venv venv
+      .\venv\Scripts\Activate   
+      pip install -r requirements.txt
+      flask run
    ```
 
 3. **Frontend (React + TailwindCSS)**
