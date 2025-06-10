@@ -3,7 +3,7 @@
 
 ## Description
 
-SoilSync is an end-to-end smart‐agriculture dashboard that ingests soil sensor data, either manually entered or streamed via a virtual IoT simulator, and uses a trained Random Forest model to recommend the optimal fertilizer blend and application rate. The web interface presents:
+SoilSync is an end-to-end smart‐agriculture dashboard system that ingests soil sensor data, either manually entered or streamed via a virtual IoT simulator, and uses a trained Random Forest model to recommend the optimal fertilizer blend and application rate. The web interface presents:
 
 - **Real-time Recommendations**: Instantly view fertilizer type, rate (kg/ha), and confidence score.  
 - **Soil Data Visualizations**: Bar charts of N, P, K levels and time-series trends of past recommendations.  
