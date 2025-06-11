@@ -23,7 +23,6 @@ https://github.com/charite-uwatwembi/Capstone
    ```bash
    git clone https://github.com/charite-uwatwembi/Capstone
    cd capstone
-``
 
 
 2. **Backend (Flask)**
